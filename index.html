@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Wesron Dev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         html {
@@ -73,8 +74,6 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: 0.3s;
     border-left: 5px solid #27ae60;
-    display: flex;
-    gap: 20px;
     width: 100%;
 }
 .card:hover {
@@ -100,15 +99,15 @@
 
 .about {
     text-align: left;
-    @media (max-width: 600px) {
-    .cards {
+
+ }
+ .cards {
         flex-direction: column;
-    }
+    display: flex;
+    gap: 20px;
 }
-}
-
-
-
+    @media (max-width: 600px)
+    
     </style>
 </head>
 
@@ -117,7 +116,6 @@
     <div class="header">
      <img src="https://picsum.photos/80">
     <h1>Wesron Dev</h1>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <p>Desenvolvedor Web | Criação de sites para negócios e igrejas</p>
 </div>
 <p style="text-align:center; font-weight: bold;">
