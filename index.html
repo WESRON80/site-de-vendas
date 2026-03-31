@@ -15,7 +15,8 @@
      min-height: 100vh;
      background-color: #eaeaea;
       overflow-x: hidden;
-     -webkit-overflow-scrolling: touch;
+     overscroll-behavior: none;
+
 }
         * {
     box-sizing: border-box;
@@ -58,7 +59,7 @@
             border-radius: 5px;
             transition: 0.3s;
             margin-top: 20px;
-            touch-action: manipulation;
+            
 
         }
     button:hover {
@@ -119,17 +120,21 @@
 * {
     -webkit-tap-highlight-color: transparent;
 }
- @media (max-width: 600px) {
+ @media (hover: hover) {
     .card:hover {
-        transform: none;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
 
     button:hover {
-        transform: none;
+        transform: scale(1.05);
+        background-color: #219150;
+        
     }
 }
-    
+    .card {
+    backface-visibility: hidden;
+}
     </style>
 </head>
 
